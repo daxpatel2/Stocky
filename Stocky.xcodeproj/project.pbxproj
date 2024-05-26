@@ -23,6 +23,8 @@
 		A77182262BFD900F00553F0C /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77182252BFD900F00553F0C /* CameraPreview.swift */; };
 		A771822A2BFED87700553F0C /* PantryItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77182292BFED87700553F0C /* PantryItemsView.swift */; };
 		A771822C2BFFEB4100553F0C /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A771822B2BFFEB4100553F0C /* CustomTabBarView.swift */; };
+		A776618B2C025696004ADC74 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A776618A2C025695004ADC74 /* CoreML.framework */; };
+		A776618F2C0266FF004ADC74 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A776618E2C0266FF004ADC74 /* Resnet50.mlmodel */; };
 		A79571EC2BFD294300F12593 /* SmartCameraLBTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79571EB2BFD294300F12593 /* SmartCameraLBTAApp.swift */; };
 		A79571EE2BFD294300F12593 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79571ED2BFD294300F12593 /* ContentView.swift */; };
 		A79571F02BFD294500F12593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79571EF2BFD294500F12593 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 		A77182252BFD900F00553F0C /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		A77182292BFED87700553F0C /* PantryItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryItemsView.swift; sourceTree = "<group>"; };
 		A771822B2BFFEB4100553F0C /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		A776618A2C025695004ADC74 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		A776618E2C0266FF004ADC74 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		A79571E82BFD294300F12593 /* Stocky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79571EB2BFD294300F12593 /* SmartCameraLBTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCameraLBTAApp.swift; sourceTree = "<group>"; };
 		A79571ED2BFD294300F12593 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			files = (
 				A72BF69F2C01822C00CC7430 /* FirebaseDatabaseSwift in Frameworks */,
 				A72BF69D2C01822C00CC7430 /* FirebaseDatabase in Frameworks */,
+				A776618B2C025696004ADC74 /* CoreML.framework in Frameworks */,
 				A72BF6AB2C01822C00CC7430 /* FirebasePerformance in Frameworks */,
 				A72BF6A92C01822C00CC7430 /* FirebaseFunctionsCombine-Community in Frameworks */,
 				A72BF6992C01822C00CC7430 /* FirebaseAuth in Frameworks */,
@@ -107,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A77661892C025695004ADC74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A776618A2C025695004ADC74 /* CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A79571DF2BFD294300F12593 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 				A79571FB2BFD294500F12593 /* SmartCameraLBTATests */,
 				A79572052BFD294600F12593 /* SmartCameraLBTAUITests */,
 				A79571E92BFD294300F12593 /* Products */,
+				A77661892C025695004ADC74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,14 +145,15 @@
 			isa = PBXGroup;
 			children = (
 				A79571EB2BFD294300F12593 /* SmartCameraLBTAApp.swift */,
-				A79572152BFD3FC200F12593 /* LaunchCameraScreen.swift */,
 				A79571ED2BFD294300F12593 /* ContentView.swift */,
+				A79572152BFD3FC200F12593 /* LaunchCameraScreen.swift */,
 				A79572172BFD492B00F12593 /* AVCaptureClass.swift */,
-				A72BF6952C017FE900CC7430 /* ProfileSectionView.swift */,
-				A72BF6AE2C0184E900CC7430 /* GoogleService-Info.plist */,
+				A776618E2C0266FF004ADC74 /* Resnet50.mlmodel */,
 				A77182252BFD900F00553F0C /* CameraPreview.swift */,
 				A771822B2BFFEB4100553F0C /* CustomTabBarView.swift */,
 				A77182292BFED87700553F0C /* PantryItemsView.swift */,
+				A72BF6952C017FE900CC7430 /* ProfileSectionView.swift */,
+				A72BF6AE2C0184E900CC7430 /* GoogleService-Info.plist */,
 				A79571EF2BFD294500F12593 /* Assets.xcassets */,
 				A79571F12BFD294500F12593 /* Preview Content */,
 			);
@@ -318,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A77182262BFD900F00553F0C /* CameraPreview.swift in Sources */,
+				A776618F2C0266FF004ADC74 /* Resnet50.mlmodel in Sources */,
 				A79572182BFD492B00F12593 /* AVCaptureClass.swift in Sources */,
 				A79572162BFD3FC200F12593 /* LaunchCameraScreen.swift in Sources */,
 				A771822C2BFFEB4100553F0C /* CustomTabBarView.swift in Sources */,

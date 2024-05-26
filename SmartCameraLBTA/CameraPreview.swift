@@ -17,7 +17,7 @@ class CameraViewModel: ObservableObject {
     let viewController = ViewController()
     
     func startCamera() {
-        viewController.startCamera()
+        viewController.setupAndStartCamera()
     }
     
     func stopCamera() {

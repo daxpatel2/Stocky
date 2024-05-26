@@ -3,7 +3,6 @@ import AVKit
 
 
 struct LaunchCameraScreen: View {
-    @ObservedObject var objectDetection = ViewController()
     @StateObject private var cameraViewModel = CameraViewModel()
     
     var body: some View {
